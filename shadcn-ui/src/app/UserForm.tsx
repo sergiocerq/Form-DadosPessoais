@@ -10,13 +10,22 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
 import {
   HTMLUserFormProperties,
 } from "@/types";
 import { RenderEstados } from "./RenderEstados";
 import { useForm } from "./useForm";
 
+/**
+ * UserForm - Componente do formulário multi etapas para cadastro de um usuário
+ * 
+ * O componente gerencia um formulário dividido em três etapas: "Dados Pessoais", "Endereço" e "Dados de Acesso".
+ * Utiliza o hook `useForm` para separar a lógica do formulário da parte visual,
+ * gerenciar o estado, validar os campos obrigatórios, e navegação
+ * entre as etapas. 
+ * 
+ * @returns {JSX.Element} - Retorna o JSX do formulário multi-etapas com abas para cada etapa
+ */
 export function UserForm() {
   const { data, updateState, step, setStep, handleAvancar, handleFinish } =
     useForm();

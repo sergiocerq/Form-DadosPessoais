@@ -2,6 +2,20 @@ import { FormCadastro, StepsFormCadastro } from "@/types";
 import React, { useEffect, useState } from "react";
 import { toast } from "sonner";
 
+/**
+ * useForm - Hook para gerenciamento do formulário de cadastro de usuário com múltiplos passos
+ * 
+ * Este hook lida com as etapas de um formulário de cadastro, gerencia o estado dos dados, valida os campos obrigatórios,
+ * faz requisição à API de CEP para preenchimento automático de endereço e lida com a navegação entre as etapas.
+ * 
+ * @returns {Object} - Retorna um objeto contendo:
+ *   - `data`: Estado atual dos dados do formulário
+ *   - `updateState`: Função para atualizar o estado dos dados do formulário
+ *   - `step`: A etapa atual do formulário
+ *   - `setStep`: Função para definir manualmente a etapa do formulário
+ *   - `handleAvancar`: Função para avançar para a próxima etapa após validar os campos obrigatórios
+ *   - `handleFinish`: Função para finalizar o formulário após validar os campos obrigatórios
+ */
 export const useForm = () => {
   const steps = ["dados-pessoais", "endereco", "dados-acesso"];
   const [data, setData] = useState<FormCadastro | undefined>();
