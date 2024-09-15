@@ -17,13 +17,13 @@ O projeto foi desenvolvido utilizando Next.js, focando em uma experiência de us
 
 Inicialmente, clone o repositório do projeto:
 ```
-git pull https://github.com/sergiocerq/Form-DadosPessoais.git
+git clone https://github.com/sergiocerq/Form-DadosPessoais.git
 ```
 
 Após isso, entre na pasta da aplicação:
 
 ```
-cd shadcn-ui
+cd Form-DadosPessoais/shadcn-ui
 ```
 
 Em seguida instale as dependências do projeto:
