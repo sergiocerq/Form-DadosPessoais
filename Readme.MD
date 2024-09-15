@@ -17,7 +17,7 @@ O projeto foi desenvolvido utilizando Next.js, focando em uma experiência de us
 
 Inicialmente, clone o repositório do projeto:
 ```
-git clone https://github.com/sergiocerq/Form-DadosPessoais.git
+git pull https://github.com/sergiocerq/Form-DadosPessoais.git
 ```
 
 Após isso, entre na pasta da aplicação:
@@ -37,4 +37,4 @@ npm run dev
 ```
 E abra, em seu navegador de preferência, o seguinte link:
 
-<a href="http://localhost:3000"/>
+<a href="http://localhost:3000">Clique aqui</a>
